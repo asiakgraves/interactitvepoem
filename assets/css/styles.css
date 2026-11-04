@@ -1,5 +1,45 @@
 /* styles.css */
 
 * {
-	font-family: Arial;
+	font-family: 'Playwrite IT Trad';
+}
+
+body {
+    margin: 1rem;
+    background-color: black;
+    color: rgb(232, 201, 217);
+    font-size: 2rem;
+    overflow: hidden;
+font-style: oblique;
+font-weight: bolder;
+    background: rgb(0, 0, 0) url("../img/ diamond.gif");
+
+}
+
+div {
+
+}
+
+
+.last {
+    padding-bottom: 2rem;
+    border-bottom: 8px solid rgb(234, 198, 210);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 10% 4rem 0 4rem;
+}
+
+div {
+    cursor: pointer;
+    transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+div:active {
+    transform: scale(1.08) translateX(3px) translateY(-2px);
+    color: #d22771;
+    transition: transform 0.1s ease, color 0.1s ease;
 }
